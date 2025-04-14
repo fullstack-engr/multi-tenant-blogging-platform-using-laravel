@@ -78,3 +78,17 @@ ADMIN_PASSWORD=your_admin_password</code></pre>
 <pre><code>php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"</code></pre>
 <p>Run the migrations to set up Sanctum:</p>
 <pre><code>php artisan migrate:fresh</code></pre>
+
+7. **Run Database Seeder**
+<pre><code>php artisan db:seed --class=UserSeeder</code></pre>
+
+8. **Install Frontend Dependencies (if applicable)**
+<p>If the project uses npm for frontend assets, install the dependencies:</p>
+<pre><code>npm install</code></pre>
+<p>Then, compile the assets:</p>
+<pre><code>npm run dev</code></pre>
+
+9. **Serve the Application**
+<p>Start the Laravel development server:</p>
+<pre><code>php artisan serve</code></pre>
+<p>Your application should now be running at <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a>.</p>
