@@ -197,6 +197,7 @@ Response:
   "created_at": "2025-04-14T11:56:21.000000Z",
   "id": 4
 }
+
 Update Post
 Endpoint: /api/posts/{id}
 Method: PUT
