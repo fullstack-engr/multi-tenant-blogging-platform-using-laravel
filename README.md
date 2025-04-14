@@ -46,42 +46,35 @@ Welcome to the CourierPlus Multi-Tenant Blog System! This project is part of the
    ```bash
    git clone [https://github.com/fullstack-engr/multi-tenant-blogging-platform-using-laravel.git](https://github.com/fullstack-engr/multi-tenant-blogging-platform-using-laravel.git)
    cd courierplus-blog
-2. Install PHP Dependencies
+<h2>2. Install PHP Dependencies</h2>
+<pre><code>composer install</code></pre>
 
-   composer install
+<h2>3. Set Up Environment File</h2>
+<p>Copy the <code>.env.example</code> file to <code>.env</code>:</p>
+<pre><code>cp .env.example .env</code></pre>
+<p>Then, generate an application key:</p>
+<pre><code>php artisan key:generate</code></pre>
 
-3. Set Up Environment File
+<h2>4. Configure Database</h2>
+<p>Open the <code>.env</code> file and configure your database settings:</p>
+<pre><code>DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_user
+DB_PASSWORD=your_database_password
+ADMIN_NAME=Admin_User
+ADMIN_EMAIL=your_admin_user
+ADMIN_PASSWORD=your_admin_password</code></pre>
 
-   cp .env.example .env
+<h2>5. Migrate the Database</h2>
+<p>Run the migrations to set up the database schema:</p>
+<pre><code>php artisan migrate</code></pre>
 
-   Then, generate an application key:
-
-   php artisan key:generate
-
-4. Configure Database
-
-   Open the .env file and configure your database settings:
-
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=your_database_name
-   DB_USERNAME=your_database_user
-   DB_PASSWORD=your_database_password
-   ADMIN_NAME=Admin_User
-   ADMIN_EMAIL=your_admin_email
-   ADMIN_PASSWORD=your_admin_password
-
-5. Migrate the Database
-
-   Run the migrations to set up the database schema:
-
-   php artisan migrate
-
-6. Add Sanctum
-
-   If not already added, install Laravel Sanctum:
-
-   composer require laravel/sanctum
-   php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
-   php artisan migrate:fresh
+<h2>6. Add Sanctum</h2>
+<p>If not already added, install Sanctum:</p>
+<pre><code>composer require laravel/sanctum</code></pre>
+<p>Publish the Sanctum configuration:</p>
+<pre><code>php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"</code></pre>
+<p>Run the migrations to set up Sanctum:</p>
+<pre><code>php artisan migrate:fresh</code></pre>
