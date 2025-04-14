@@ -24,14 +24,25 @@ Welcome to the CourierPlus Multi-Tenant Blog System! This project is part of the
 ## Getting Started
 
 ### Prerequisites
-- PHP 7.3 or higher
-- Composer
-- Node.js and npm (for frontend assets)
-- MySQL or any other database supported by Laravel
+
+1. **PHP:**
+   Ensure you have PHP installed (version 8.0 or higher is recommended).
+
+2. **Composer:**
+   Make sure Composer is installed. Composer is a dependency manager for PHP.
+
+3. **Node.js and npm:**
+   You'll need Node.js and npm. Node.js version v18.20.2 was used; other versions above v18.20.2 are also compatible.
+
+4. **Database:**
+   Have a database server running (e.g., MySQL, PostgreSQL). MySQL was used.
+
+**Note:** This project was set up on Laravel 11.
+
 
 ### Installation
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/courierplus-blog.git
+   git clone [https://github.com/fullstack-engr/multi-tenant-blogging-platform-using-laravel.git](https://github.com/fullstack-engr/multi-tenant-blogging-platform-using-laravel.git)
    cd courierplus-blog
