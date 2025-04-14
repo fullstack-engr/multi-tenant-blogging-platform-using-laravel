@@ -1,0 +1,942 @@
+{
+	"info": {
+		"_postman_id": "",
+		"name": "CourierPlus2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tenant",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"federicka@gmail.com\",\n  \"password\": \"federicka\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}",
+							"host": [
+								"{{base_url}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"federicka@gmail.com\",\n  \"password\": \"federicka\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Apr 2025 08:00:47 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"1|lJss07pKQlkYdx96pqJL0hFbegPvs53Vt0hE0Ko82b21f1f6\",\n    \"user\": {\n        \"id\": 4,\n        \"name\": \"Federick Approved\",\n        \"email\": \"federicka@gmail.com\",\n        \"email_verified_at\": null,\n        \"is_admin\": false,\n        \"status\": \"approved\",\n        \"created_at\": \"2025-04-13T21:37:36.000000Z\",\n        \"updated_at\": \"2025-04-13T21:37:36.000000Z\"\n    }\n}"
+						},
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"federick@gmail.com\",\n  \"password\": \"federick\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Apr 2025 08:01:53 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"2|toiGKoriSKoTHS9YJbKs6raPrLfwp4DQQ35zCzvK295a1c27\",\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"Federick Ann\",\n        \"email\": \"federick@gmail.com\",\n        \"email_verified_at\": null,\n        \"is_admin\": false,\n        \"status\": \"approved\",\n        \"created_at\": \"2025-04-13T19:35:38.000000Z\",\n        \"updated_at\": \"2025-04-14T01:04:25.000000Z\"\n    }\n}"
+						},
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"federicka@gmail.com\",\n  \"password\": \"federicka\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Apr 2025 10:54:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Your account is not approved yet.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|O4Pc4nTNWnnQPqmvxjBQUWhYYDCwV6ijAWvxUbF780a567df",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/logout",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Apr 2025 11:12:38 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Logged out\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|O4Pc4nTNWnnQPqmvxjBQUWhYYDCwV6ijAWvxUbF780a567df",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/me",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"me"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Me",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/me",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"me"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Apr 2025 11:47:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"FederickA\",\n    \"email\": \"federicka@gmail.com\",\n    \"email_verified_at\": null,\n    \"is_admin\": false,\n    \"status\": \"approved\",\n    \"created_at\": \"2025-04-14T10:28:13.000000Z\",\n    \"updated_at\": \"2025-04-14T11:07:33.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "All Posts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|KRXqq7kYUGX0trRyA7TQPeLAdxyNmLuhQIhMGcnD144cb9fe",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/posts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "All Posts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/posts",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"posts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Apr 2025 11:49:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"site_id\": 1,\n        \"user_id\": 1,\n        \"title\": \"6 Exercises to Tone Every Inch of Your Body\",\n        \"content\": \"1. Lunges · 2. Pushups · 3. Squats · 4. Standing overhead dumbbell presses · 5. Dumbbell rows · 6. Single-leg deadlifts.\",\n        \"created_at\": \"2025-04-14T11:46:47.000000Z\",\n        \"updated_at\": \"2025-04-14T11:46:47.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"FederickA\",\n            \"email\": \"federicka@gmail.com\",\n            \"email_verified_at\": null,\n            \"is_admin\": false,\n            \"status\": \"approved\",\n            \"created_at\": \"2025-04-14T10:28:13.000000Z\",\n            \"updated_at\": \"2025-04-14T11:07:33.000000Z\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"site_id\": 1,\n        \"user_id\": 1,\n        \"title\": \"The Best Time of Day to Take Vitamin B12 for Maximum Absorption, According to Dietitians\",\n        \"content\": \"The red blood cells that course through your veins, the protective covering that surrounds your nerve fibers and the genetic information that is tightly packed into your cells all rely on one key nutrient—vitamin B12. Yet nearly 12.5% of the people in the U.S. aged 19 or older are not getting enough of this essential vitamin.1 This is particularly common among older adults, people who follow a vegetarian or vegan diet and individuals with certain digestive disorders. If you fall into one of these groups, you may have been advised to take a vitamin B12 supplement. However, in order to unlock your supplement’s full potential, timing may be just as important as the supplement itself. So, we asked dietitians for their expertise on the best time to take vitamin B12 for maximum absorption.\",\n        \"created_at\": \"2025-04-14T11:45:00.000000Z\",\n        \"updated_at\": \"2025-04-14T11:45:00.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"FederickA\",\n            \"email\": \"federicka@gmail.com\",\n            \"email_verified_at\": null,\n            \"is_admin\": false,\n            \"status\": \"approved\",\n            \"created_at\": \"2025-04-14T10:28:13.000000Z\",\n            \"updated_at\": \"2025-04-14T11:07:33.000000Z\"\n        }\n    },\n    {\n        \"id\": 1,\n        \"site_id\": 1,\n        \"user_id\": 1,\n        \"title\": \"Most popular places to visit\",\n        \"content\": \"Based on various sources, some of the most popular travel destinations for 2025 include New York City, London, Dubai, and various other trending trips like Cape Town, Kruger & Victoria Falls, Classic Turkey, and Bali. Additionally, specific locations like the Maldives, Abu Dhabi, Paris, Santorini, and Grand Canyon are also frequently mentioned as popular travel destinations. \\nTrending Destinations:\\nNew York City (USA): Often cited as a top choice for city breaks. \\nLondon (UK): A highly popular destination with numerous attractions. \\nDubai (UAE): Known for its modern architecture, beaches, and resorts. \\nOther Trending Trips:\\nCape Town, Kruger & Victoria Falls: A popular safari and wildlife adventure. \\nClassic Turkey: Includes destinations like Istanbul, Cappadocia, and Izmir. \\nBest of Paris, Bordeaux & Loire Valley: A blend of culture, wine, and history. \\nBest of Bali: Features destinations like Ubud, Pemuteran, and West Bali National Park. \\nPanoramic Rail Routes of Switzerland: Offers scenic train journeys through stunning landscapes. \\nItaly the Grand Tour: A comprehensive exploration of iconic cities and regions. \\nSpecific Locations:\\nMaldives: Known for its stunning beaches and resorts. \\nAbu Dhabi (UAE): Offers a blend of modern and cultural attractions. \\nParis (France): A classic and highly sought-after destination. \\nSantorini (Greece): Famous for its unique island scenery and vibrant culture. \\nGrand Canyon (USA): A natural wonder offering stunning views. \\nOther Notable Destinations:\\nYosemite National Park, Grand Canyon National Park, Niagara Falls, Yellowstone National Park, Redwood National and State Parks, Glacier National Park, and Lincoln Memorial (USA): These are also popular tourist attractions in America. \\nLadakh (India): Known for its high-altitude scenery, Buddhist culture, and adventure opportunities. \\nManali (India): A popular hill station with scenic beauty and cultural attractions. \\nCoorg (India): A hill town known for its coffee plantations and natural beauty. \\nAuckland (New Zealand): A city known for its outdoor adventures and tech scene. \",\n        \"created_at\": \"2025-04-14T11:42:46.000000Z\",\n        \"updated_at\": \"2025-04-14T11:42:46.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"FederickA\",\n            \"email\": \"federicka@gmail.com\",\n            \"email_verified_at\": null,\n            \"is_admin\": false,\n            \"status\": \"approved\",\n            \"created_at\": \"2025-04-14T10:28:13.000000Z\",\n            \"updated_at\": \"2025-04-14T11:07:33.000000Z\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Show Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|KRXqq7kYUGX0trRyA7TQPeLAdxyNmLuhQIhMGcnD144cb9fe",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/posts/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show Post",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/posts/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"posts",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Apr 2025 11:50:48 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"site_id\": 1,\n    \"user_id\": 1,\n    \"title\": \"Most popular places to visit\",\n    \"content\": \"Based on various sources, some of the most popular travel destinations for 2025 include New York City, London, Dubai, and various other trending trips like Cape Town, Kruger & Victoria Falls, Classic Turkey, and Bali. Additionally, specific locations like the Maldives, Abu Dhabi, Paris, Santorini, and Grand Canyon are also frequently mentioned as popular travel destinations. \\nTrending Destinations:\\nNew York City (USA): Often cited as a top choice for city breaks. \\nLondon (UK): A highly popular destination with numerous attractions. \\nDubai (UAE): Known for its modern architecture, beaches, and resorts. \\nOther Trending Trips:\\nCape Town, Kruger & Victoria Falls: A popular safari and wildlife adventure. \\nClassic Turkey: Includes destinations like Istanbul, Cappadocia, and Izmir. \\nBest of Paris, Bordeaux & Loire Valley: A blend of culture, wine, and history. \\nBest of Bali: Features destinations like Ubud, Pemuteran, and West Bali National Park. \\nPanoramic Rail Routes of Switzerland: Offers scenic train journeys through stunning landscapes. \\nItaly the Grand Tour: A comprehensive exploration of iconic cities and regions. \\nSpecific Locations:\\nMaldives: Known for its stunning beaches and resorts. \\nAbu Dhabi (UAE): Offers a blend of modern and cultural attractions. \\nParis (France): A classic and highly sought-after destination. \\nSantorini (Greece): Famous for its unique island scenery and vibrant culture. \\nGrand Canyon (USA): A natural wonder offering stunning views. \\nOther Notable Destinations:\\nYosemite National Park, Grand Canyon National Park, Niagara Falls, Yellowstone National Park, Redwood National and State Parks, Glacier National Park, and Lincoln Memorial (USA): These are also popular tourist attractions in America. \\nLadakh (India): Known for its high-altitude scenery, Buddhist culture, and adventure opportunities. \\nManali (India): A popular hill station with scenic beauty and cultural attractions. \\nCoorg (India): A hill town known for its coffee plantations and natural beauty. \\nAuckland (New Zealand): A city known for its outdoor adventures and tech scene. \",\n    \"created_at\": \"2025-04-14T11:42:46.000000Z\",\n    \"updated_at\": \"2025-04-14T11:42:46.000000Z\",\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"FederickA\",\n        \"email\": \"federicka@gmail.com\",\n        \"email_verified_at\": null,\n        \"is_admin\": false,\n        \"status\": \"approved\",\n        \"created_at\": \"2025-04-14T10:28:13.000000Z\",\n        \"updated_at\": \"2025-04-14T11:07:33.000000Z\"\n    },\n    \"site\": {\n        \"id\": 1,\n        \"user_id\": 1,\n        \"name\": \"People Talk\",\n        \"subdomain\": \"people-talk\",\n        \"created_at\": \"2025-04-14T11:40:15.000000Z\",\n        \"updated_at\": \"2025-04-14T11:40:15.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|KRXqq7kYUGX0trRyA7TQPeLAdxyNmLuhQIhMGcnD144cb9fe",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/posts/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Post",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/posts/5",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"posts",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Apr 2025 12:03:13 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Deleted\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Insert Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|KRXqq7kYUGX0trRyA7TQPeLAdxyNmLuhQIhMGcnD144cb9fe",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"site_id\": 1,\n    \"user_id\": 1,\n    \"title\": \"How do People Talk\",\n    \"content\": \"Flatly - In a firm and definite way intended to end discussion of a subject. Fluent - Spoken well and without difficulty. Gibbering - Unable to speak in a sensible way, especially because you are frightened or shocked. Halting - With a lot of pauses between words or movements, often because of a lack of confidence.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/posts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Insert Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"site_id\": 1,\n    \"user_id\": 1,\n    \"title\": \"How do People Talk\",\n    \"content\": \"Flatly - In a firm and definite way intended to end discussion of a subject. Fluent - Spoken well and without difficulty. Gibbering - Unable to speak in a sensible way, especially because you are frightened or shocked. Halting - With a lot of pauses between words or movements, often because of a lack of confidence.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/posts",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"posts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Apr 2025 11:56:22 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": \"How do People Talk\",\n    \"content\": \"Flatly - In a firm and definite way intended to end discussion of a subject. Fluent - Spoken well and without difficulty. Gibbering - Unable to speak in a sensible way, especially because you are frightened or shocked. Halting - With a lot of pauses between words or movements, often because of a lack of confidence.\",\n    \"user_id\": 1,\n    \"site_id\": 1,\n    \"updated_at\": \"2025-04-14T11:56:21.000000Z\",\n    \"created_at\": \"2025-04-14T11:56:21.000000Z\",\n    \"id\": 4\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|KRXqq7kYUGX0trRyA7TQPeLAdxyNmLuhQIhMGcnD144cb9fe",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"site_id\": 1,\n    \"user_id\": 1,\n    \"title\": \"How do People Talk Frequently\",\n    \"content\": \"Flatly - In a firm and definite way intended to end discussion of a subject. Fluent - Spoken well and without difficulty. Gibbering - Unable to speak in a sensible way, especially because you are frightened or shocked. Halting - With a lot of pauses between words or movements, often because of a lack of confidence.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/posts/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Post",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"site_id\": 1,\n    \"user_id\": 1,\n    \"title\": \"How do People Talk Frequently\",\n    \"content\": \"Flatly - In a firm and definite way intended to end discussion of a subject. Fluent - Spoken well and without difficulty. Gibbering - Unable to speak in a sensible way, especially because you are frightened or shocked. Halting - With a lot of pauses between words or movements, often because of a lack of confidence.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/posts/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"posts",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Apr 2025 11:59:41 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"site_id\": 1,\n    \"user_id\": 1,\n    \"title\": \"How do People Talk Frequently\",\n    \"content\": \"Flatly - In a firm and definite way intended to end discussion of a subject. Fluent - Spoken well and without difficulty. Gibbering - Unable to speak in a sensible way, especially because you are frightened or shocked. Halting - With a lot of pauses between words or movements, often because of a lack of confidence.\",\n    \"created_at\": \"2025-04-14T11:56:21.000000Z\",\n    \"updated_at\": \"2025-04-14T11:59:41.000000Z\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "{{base_url}}",
+			"value": "http://127.0.0.1:8000",
+			"type": "default"
+		}
+	]
+}
