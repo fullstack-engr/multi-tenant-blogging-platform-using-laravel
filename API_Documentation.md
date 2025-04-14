@@ -1,4 +1,4 @@
-# 📘 CourierPlus2 API Documentation
+# 📘 CourierPlus API Documentation
 
 Welcome to the CourierPlus2 API. This API allows clients to manage user authentication and post operations in a multi-tenant blog system.
 
