@@ -1,5 +1,5 @@
 
-# CourierPlus2 API Documentation
+# CourierPlus API Documentation
 This documentation provides a comprehensive overview of the API endpoints, including the request and response formats, authentication details, and example payloads.
 
 ## Base URL
@@ -60,9 +60,11 @@ Response:
     • Status: 200 OK
     • Body:
 
+```json
 {
   "message": "Logged out"
 }
+
 Me
 Endpoint: /api/me
 Method: GET
