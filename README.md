@@ -44,7 +44,7 @@ Welcome to the CourierPlus Multi-Tenant Blog System! This project is part of the
 
 1. **Clone the Repository:**
    ```bash
-   git clone (https://github.com/fullstack-engr/multi-tenant-blogging-platform-using-laravel.git)
+   git clone https://github.com/fullstack-engr/multi-tenant-blogging-platform-using-laravel.git
    cd courierplus-blog
 2. **Install PHP Dependencies**
 <pre><code>composer install</code></pre>
