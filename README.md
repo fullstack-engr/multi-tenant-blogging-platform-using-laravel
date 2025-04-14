@@ -39,7 +39,7 @@ Welcome to the CourierPlus Multi-Tenant Blog System! This project is part of the
    Have a database server running (e.g., MySQL, PostgreSQL). MySQL was used.
 
 **Note:** This project was set up on Laravel 11.
-The Tenant API Documentation can be found here[https://github.com/fullstack-engr/multi-tenant-blogging-platform-using-laravel/blob/production/API_Documentation.md].
+The Tenant API Documentation can be found [here](https://github.com/fullstack-engr/multi-tenant-blogging-platform-using-laravel/blob/production/API_Documentation.md).
 
 ### Installation
 
