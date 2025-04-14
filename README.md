@@ -1,3 +1,4 @@
+
 # CourierPlus Multi-Tenant Blog System
 
 Welcome to the CourierPlus Multi-Tenant Blog System! This project is part of the CourierPlus selection process and demonstrates the implementation of multi-tenancy, authentication, API development, and best coding practices using Laravel.
@@ -38,7 +39,7 @@ Welcome to the CourierPlus Multi-Tenant Blog System! This project is part of the
    Have a database server running (e.g., MySQL, PostgreSQL). MySQL was used.
 
 **Note:** This project was set up on Laravel 11.
-
+The Tenant API Documentation can be found here[https://github.com/fullstack-engr/multi-tenant-blogging-platform-using-laravel/blob/production/API_Documentation.md].
 
 ### Installation
 
@@ -46,49 +47,75 @@ Welcome to the CourierPlus Multi-Tenant Blog System! This project is part of the
    ```bash
    git clone https://github.com/fullstack-engr/multi-tenant-blogging-platform-using-laravel.git
    cd courierplus-blog
+   ```
+
 2. **Install PHP Dependencies**
-<pre><code>composer install</code></pre>
+   ```bash
+   composer install
+   ```
 
 3. **Set Up Environment File**
-<p>Copy the <code>.env.example</code> file to <code>.env</code>:</p>
-<pre><code>cp .env.example .env</code></pre>
-<p>Then, generate an application key:</p>
-<pre><code>php artisan key:generate</code></pre>
+   Copy the `.env.example` file to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+   Then, generate an application key:
+   ```bash
+   php artisan key:generate
+   ```
 
 4. **Configure Database**
-<p>Open the <code>.env</code> file and configure your database settings:</p>
-<pre><code>DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=your_database_name
-DB_USERNAME=your_database_user
-DB_PASSWORD=your_database_password
-ADMIN_NAME=Admin_User
-ADMIN_EMAIL=your_admin_user
-ADMIN_PASSWORD=your_admin_password</code></pre>
+   Open the `.env` file and configure your database settings:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=your_database_name
+   DB_USERNAME=your_database_user
+   DB_PASSWORD=your_database_password
+   ADMIN_NAME=Admin_User
+   ADMIN_EMAIL=your_admin_user
+   ADMIN_PASSWORD=your_admin_password
+   ```
 
 5. **Migrate the Database**
-<p>Run the migrations to set up the database schema:</p>
-<pre><code>php artisan migrate</code></pre>
+   Run the migrations to set up the database schema:
+   ```bash
+   php artisan migrate
+   ```
 
 6. **Add Sanctum**
-<p>If not already added, install Sanctum:</p>
-<pre><code>composer require laravel/sanctum</code></pre>
-<p>Publish the Sanctum configuration:</p>
-<pre><code>php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"</code></pre>
-<p>Run the migrations to set up Sanctum:</p>
-<pre><code>php artisan migrate:fresh</code></pre>
+   If not already added, install Sanctum:
+   ```bash
+   composer require laravel/sanctum
+   ```
+   Publish the Sanctum configuration:
+   ```bash
+   php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+   ```
+   Run the migrations to set up Sanctum:
+   ```bash
+   php artisan migrate:fresh
+   ```
 
 7. **Run Database Seeder**
-<pre><code>php artisan db:seed --class=UserSeeder</code></pre>
+   ```bash
+   php artisan db:seed --class=UserSeeder
+   ```
 
 8. **Install Frontend Dependencies (if applicable)**
-<p>If the project uses npm for frontend assets, install the dependencies:</p>
-<pre><code>npm install</code></pre>
-<p>Then, compile the assets:</p>
-<pre><code>npm run dev</code></pre>
+   If the project uses npm for frontend assets, install the dependencies:
+   ```bash
+   npm install
+   ```
+   Then, compile the assets:
+   ```bash
+   npm run dev
+   ```
 
 9. **Serve the Application**
-<p>Start the Laravel development server:</p>
-<pre><code>php artisan serve</code></pre>
-<p>Your application should now be running at <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a>.</p>
+   Start the Laravel development server:
+   ```bash
+   php artisan serve
+   ```
+   Your application should now be running at [http://127.0.0.1:8000](http://127.0.0.1:8000).
