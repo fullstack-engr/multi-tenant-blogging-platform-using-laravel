@@ -48,7 +48,8 @@ Error Response:
 {
   "message": "Your account is not approved yet."
 }
-Logout
+
+### **Logout**
 Endpoint: /api/logout
 Method: POST
 Description: Logs out the authenticated user.
