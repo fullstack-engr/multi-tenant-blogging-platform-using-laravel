@@ -46,3 +46,42 @@ Welcome to the CourierPlus Multi-Tenant Blog System! This project is part of the
    ```bash
    git clone [https://github.com/fullstack-engr/multi-tenant-blogging-platform-using-laravel.git](https://github.com/fullstack-engr/multi-tenant-blogging-platform-using-laravel.git)
    cd courierplus-blog
+2. Install PHP Dependencies
+
+   composer install
+
+3. Set Up Environment File
+
+   cp .env.example .env
+
+   Then, generate an application key:
+
+   php artisan key:generate
+
+4. Configure Database
+
+   Open the .env file and configure your database settings:
+
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=your_database_name
+   DB_USERNAME=your_database_user
+   DB_PASSWORD=your_database_password
+   ADMIN_NAME=Admin_User
+   ADMIN_EMAIL=your_admin_email
+   ADMIN_PASSWORD=your_admin_password
+
+5. Migrate the Database
+
+   Run the migrations to set up the database schema:
+
+   php artisan migrate
+
+6. Add Sanctum
+
+   If not already added, install Laravel Sanctum:
+
+   composer require laravel/sanctum
+   php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+   php artisan migrate:fresh
